@@ -1,5 +1,78 @@
-<!-- Contoh untuk tombol Subway Surfers -->
-<button class="play-btn" onclick="window.open('https://poki.com/id/g/subway-surfers', '_blank')">▶ Mainkan Sekarang</button>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePoki - Mainkan Game Gratis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigasi Seperti Poki -->
+    <header class="navbar">
+        <div class="logo">🎮 GamePoki</div>
+        <nav class="nav-menu">
+            <a href="#" class="aktif">Beranda</a>
+            <a href="#">Baru</a>
+            <a href="#">Populer</a>
+            <a href="#">Kategori</a>
+        </nav>
+    </header>
 
-<!-- Contoh untuk kartu game lain -->
-<button class="card-play" onclick="window.open('https://poki.com/id/g/hill-climb-racing', '_blank')">Mainkan</button>
+    <main>
+        <!-- Bagian Game Utama: Subway Surfers -->
+        <section class="game-unggulan">
+            <div class="gambar-unggulan">
+                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/6/66/Subway_Surfers_logo.svg/1200px-Subway_Surfers_logo.svg.png" alt="Subway Surfers">
+                <button class="tombol-main-besar" onclick="window.open('https://poki.com/id/g/subway-surfers', '_blank')">▶ MAINKAN SEKARANG</button>
+            </div>
+            <div class="info-unggulan">
+                <h1>Subway Surfers</h1>
+                <p>Lari secepat kilat, hindari kereta, kumpulkan koin! Game lari tak berujung paling terkenal di dunia.</p>
+                <div class="stat">⭐ 4.8 | 👾 Lari | 📅 Diperbarui Hari Ini</div>
+            </div>
+        </section>
+
+        <!-- Daftar Game Populer -->
+        <section class="daftar-game">
+            <h2>Game Populer Lainnya</h2>
+            <div class="grid-game">
+                <div class="kartu-game">
+                    <div class="gambar-kartu" style="background:#ffc107;">🚗</div>
+                    <h3>Hill Climb Racing</h3>
+                    <button class="tombol-main" onclick="window.open('https://poki.com/id/g/hill-climb-racing', '_blank')">Mainkan</button>
+                </div>
+                <div class="kartu-game">
+                    <div class="gambar-kartu" style="background:#ff4757;">🏀</div>
+                    <h3>Basketball Stars</h3>
+                    <button class="tombol-main" onclick="window.open('https://poki.com/id/g/basketball-stars', '_blank')">Mainkan</button>
+                </div>
+                <div class="kartu-game">
+                    <div class="gambar-kartu" style="background:#3742fa;">🧩</div>
+                    <h3>Block Puzzle</h3>
+                    <button class="tombol-main" onclick="window.open('https://poki.com/id/g/block-puzzle', '_blank')">Mainkan</button>
+                </div>
+                <div class="kartu-game">
+                    <div class="gambar-kartu" style="background:#2ed573;">⚽</div>
+                    <h3>Soccer Skills</h3>
+                    <button class="tombol-main" onclick="window.open('https://poki.com/id/g/soccer-skills-champion-cup', '_blank')">Mainkan</button>
+                </div>
+                <div class="kartu-game">
+                    <div class="gambar-kartu" style="background:#9c27b0;">🏎️</div>
+                    <h3>Traffic Rush</h3>
+                    <button class="tombol-main" onclick="window.open('https://poki.com/id/g/traffic-rush', '_blank')">Mainkan</button>
+                </div>
+                <div class="kartu-game">
+                    <div class="gambar-kartu" style="background:#00bcd4;">🎯</div>
+                    <h3>Knife Hit</h3>
+                    <button class="tombol-main" onclick="window.open('https://poki.com/id/g/knife-hit', '_blank')">Mainkan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GamePoki Clone. Semua Game Tertaut ke Situs Resmi.</p>
+    </footer>
+</body>
+</html>
