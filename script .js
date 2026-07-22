@@ -1,11 +1,17 @@
-// Fungsi saat tombol Mainkan diklik
+// Tombol Subway Surfers
 document.getElementById('playBtn').addEventListener('click', () => {
-    alert('🚀 Memuat Subway Surfers...\n\n*Catatan: Untuk versi lengkap, kamu perlu menyematkan (embed) tautan game resmi dari penyedia game yang diizinkan.*');
+    window.open('https://poki.com/id/g/subway-surfers', '_blank');
 });
 
-// Fungsi tombol mainkan di kartu game
-document.querySelectorAll('.card-play').forEach(btn => {
+// Semua tombol kartu game
+document.querySelectorAll('.card-play').forEach((btn, index) => {
+    const linkGame = [
+        'https://poki.com/id/g/hill-climb-racing',
+        'https://poki.com/id/g/basketball-stars',
+        'https://poki.com/id/g/block-puzzle',
+        'https://poki.com/id/g/soccer-skills'
+    ];
     btn.addEventListener('click', () => {
-        alert('🎮 Memuat game...\n\nTambahkan tautan game asli pada kode ini nanti!');
+        window.open(linkGame[index], '_blank');
     });
 });
